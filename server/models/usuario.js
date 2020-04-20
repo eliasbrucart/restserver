@@ -13,13 +13,14 @@ let usuarioSchema = new Schema({
     },
     password: {
         type: String,
-        required: [true, 'La contraseña es necesaria']
+        required: [true, 'La contraseña es obligatoria']
     },
     img: {
         type: String,
         required: false
     },
     role: {
+        type: String,
         role: 'USER_ROLE'
     },
     estado: {
