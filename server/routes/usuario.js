@@ -1,8 +1,7 @@
 const express = require('express');
-const app = express();
-
 const Usuario = require('../models/usuario');
 
+const app = express();
 
 app.get('/usuario', function(req, res) {
     res.json('get Usuario LOCAL!!!')
